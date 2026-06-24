@@ -105,7 +105,7 @@ jobs:
 
           # 🚀 Despliegue de alto rendimiento: Enfocado solo en tu tema
           local-dir: ./wp-content/themes/bloom-space/
-          server-dir: ./wp-content/themes/bloom-space/
+          server-dir: ./SpaZaitSebastian/wp-content/themes/bloom-space/
 
           # 🔒 estabilidad
           timeout: 60000
