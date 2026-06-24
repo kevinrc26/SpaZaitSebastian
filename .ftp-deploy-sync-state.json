@@ -1,0 +1,73 @@
+{
+    "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
+    "version": "1.0.0",
+    "generatedTime": 1782009362199,
+    "data": [
+        {
+            "type": "folder",
+            "name": "acf-json"
+        },
+        {
+            "type": "folder",
+            "name": "documentacion"
+        },
+        {
+            "type": "folder",
+            "name": "wp-content"
+        },
+        {
+            "type": "file",
+            "name": "documentacion/README.md",
+            "size": 29,
+            "hash": "633fd4059e4cd910f1f5812875a5dd983fb3369fbe0b3ffb0cdb5a86e691282e"
+        },
+        {
+            "type": "folder",
+            "name": "wp-content/plugins"
+        },
+        {
+            "type": "folder",
+            "name": "wp-content/themes"
+        },
+        {
+            "type": "folder",
+            "name": "wp-content/plugins/advanced-custom-fields"
+        },
+        {
+            "type": "folder",
+            "name": "wp-content/plugins/ameliabooking"
+        },
+        {
+            "type": "folder",
+            "name": "wp-content/plugins/elementor"
+        },
+        {
+            "type": "folder",
+            "name": "wp-content/themes/tema-hijo"
+        },
+        {
+            "type": "file",
+            "name": "wp-content/plugins/ameliabooking/readme.md",
+            "size": 1,
+            "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+            "type": "file",
+            "name": "wp-content/plugins/advanced-custom-fields/readme.md",
+            "size": 1,
+            "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+            "type": "file",
+            "name": "wp-content/themes/tema-hijo/style.css",
+            "size": 34,
+            "hash": "522d787c7b3cc98257798adcdfceeedc27525f3473fe2a3e15da75beae1ae875"
+        },
+        {
+            "type": "file",
+            "name": "wp-content/plugins/elementor/readme.md",
+            "size": 1,
+            "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        }
+    ]
+}
