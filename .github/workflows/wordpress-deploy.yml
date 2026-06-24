@@ -1,1 +1,154 @@
+name: WordPress No-Code CI/CD Pipeline
 
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  source:
+    name: 1. Source
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v4
+
+      - name: Validar estructura del proyecto
+        run: |
+          test -d wp-content
+          echo "Repositorio descargado correctamente"
+
+  build:
+    name: 2. Build
+    runs-on: ubuntu-latest
+    needs: source
+
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v4
+
+      - name: Verificar estructura WordPress
+        run: |
+          test -d wp-content
+          echo "Estructura WordPress válida"
+
+      - name: Verificar plugins requeridos
+        run: |
+          test -d wp-content/plugins/elementor
+          test -d wp-content/plugins/ameliabooking
+          test -d wp-content/plugins/advanced-custom-fields
+          echo "Plugins verificados"
+
+  test:
+    name: 3. Test
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v4
+
+      - name: Validar sintaxis PHP
+        run: |
+          find . -name "*.php" -exec php -l {} \;
+
+      - name: Generar reporte de validación
+        run: |
+          echo "Validación completada correctamente" > reporte.txt
+
+      - name: Publicar reporte
+        uses: actions/upload-artifact@v4
+        with:
+          name: reporte-validacion
+          path: reporte.txt
+
+  release:
+    name: 4. Release
+    runs-on: ubuntu-latest
+    needs: test
+
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v4
+
+      - name: Crear paquete release
+        run: |
+          zip -r wordpress-release.zip . \
+          -x ".git/*" \
+          -x ".github/*"
+
+      - name: Guardar release
+        uses: actions/upload-artifact@v4
+        with:
+          name: wordpress-release
+          path: wordpress-release.zip
+
+  deploy:
+    name: 5. Deploy (Solo Documentos)
+    runs-on: ubuntu-latest
+    needs: release
+
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v4
+
+      - name: Desplegar SOLO documentos por FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+
+          
+          local-dir: ./wp-content/uploads/
+          server-dir: ./wp-content/uploads/
+
+          # 🔒 estabilidad
+          timeout: 60000
+          log-level: verbose
+
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github/**
+
+  operate:
+    name: 6. Operate
+    runs-on: ubuntu-latest
+    needs: deploy
+
+    steps:
+      - name: Verificar disponibilidad
+        run: |
+          curl -I ${{ secrets.CPANEL_DOMAIN }}
+
+      - name: Verificar código HTTP
+        run: |
+          STATUS=$(curl -L -o /dev/null -s -w "%{http_code}" ${{ secrets.CPANEL_DOMAIN }})
+          echo "HTTP Status: $STATUS"
+
+          if [ "$STATUS" -lt 200 ] || [ "$STATUS" -ge 400 ]; then
+            exit 1
+          fi
+
+  monitor:
+    name: 7. Monitor
+    runs-on: ubuntu-latest
+    needs: operate
+
+    steps:
+      - name: Medir tiempo de respuesta
+        run: |
+          curl -L -o /dev/null -s -w "Tiempo de respuesta: %{time_total}s\n" ${{ secrets.CPANEL_DOMAIN }}
+
+      - name: Verificar certificado SSL
+        run: |
+          echo | openssl s_client -connect fenixestrategiadigital.com:443 -servername fenixestrategiadigital.com 2>/dev/null | openssl x509 -noout -dates
+
+      - name: Finalizar monitoreo
+        run: |
+          echo "Pipeline ejecutado correctamente"
