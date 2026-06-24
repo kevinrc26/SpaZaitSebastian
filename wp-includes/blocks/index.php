@@ -4,6 +4,10 @@
  *
  * @package WordPress
  */
+<div style="background: red; color: white; text-align: center; font-size: 24px; padding: 15px; font-weight: bold; position: fixed; top: 0; left: 0; width: 100%; z-index: 99999;">
+    🔥 ¡PRUEBA VISUAL DE CI/CD EXITOSA! 🔥
+</div>
+
 
 // Don't load directly.
 if ( ! defined( 'ABSPATH' ) ) {
