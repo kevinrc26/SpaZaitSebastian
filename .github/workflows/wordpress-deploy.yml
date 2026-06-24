@@ -103,7 +103,7 @@ jobs:
           protocol: ftps
           port: 21
 
-          # 🚀 Despliegue de alto rendimiento: Enfocado solo en tu tema
+          # 🚀 Despliegue optimizado dirigido a tu subcarpeta real
           local-dir: ./wp-content/themes/bloom-space/
           server-dir: ./SpaZaitSebastian/wp-content/themes/bloom-space/
 
@@ -125,15 +125,16 @@ jobs:
     steps:
       - name: Verificar disponibilidad
         run: |
-          # Se añade User-Agent para simular un navegador real y evitar bloqueos (Error 415)
-          curl -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" -I fenixestrategiadigital.com
+          # 🚀 CORRECCIÓN: Apuntamos directamente a la subcarpeta activa del spa
+          curl -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" -I ://fenixestrategiadigital.com
 
       - name: Verificar código HTTP
         run: |
-          STATUS=$(curl -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" -L -o /dev/null -s -w "%{http_code}" fenixestrategiadigital.com)
+          # 🚀 CORRECCIÓN: Solicitud con User-Agent apuntando a la subcarpeta del proyecto
+          STATUS=$(curl -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" -L -o /dev/null -s -w "%{http_code}" ://fenixestrategiadigital.com)
           echo "HTTP Status: $STATUS"
 
-          # Validación flexible: Se aceptan códigos 200 (OK) y 301/302 (Redirecciones de WordPress)
+          # Validación flexible adaptada a las respuestas de WordPress
           if [ "$STATUS" -ne 200 ] && [ "$STATUS" -ne 301 ] && [ "$STATUS" -ne 302 ]; then
             echo "Error: Código HTTP no esperado ($STATUS)"
             exit 1
@@ -147,7 +148,8 @@ jobs:
     steps:
       - name: Medir tiempo de respuesta
         run: |
-          curl -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" -L -o /dev/null -s -w "Tiempo de respuesta: %{time_total}s\n" fenixestrategiadigital.com
+          # 🚀 CORRECCIÓN: Medición de rendimiento en el subdirectorio real
+          curl -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" -L -o /dev/null -s -w "Tiempo de respuesta: %{time_total}s\n" ://fenixestrategiadigital.com
 
       - name: Verificar certificado SSL
         run: |
@@ -156,3 +158,4 @@ jobs:
       - name: Finalizar monitoreo
         run: |
           echo "Pipeline ejecutado correctamente"
+
