@@ -86,7 +86,7 @@ jobs:
           path: wordpress-release.zip
 
   deploy:
-    name: 5. Deploy (Solo Documentos)
+    name: 5. Deploy (Todo wp-content)
     runs-on: ubuntu-latest
     needs: release
 
@@ -94,7 +94,7 @@ jobs:
       - name: Clonar repositorio
         uses: actions/checkout@v4
 
-      - name: Desplegar SOLO documentos por FTP
+      - name: Desplegar wp-content completo por FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
@@ -103,9 +103,9 @@ jobs:
           protocol: ftps
           port: 21
 
-          
-          local-dir: ./wp-content/uploads/
-          server-dir: ./wp-content/uploads/
+          # 🚀 CORRECCIÓN: Apunta a la raíz de contenido para actualizar Temas (bloom-space) y Plugins
+          local-dir: ./wp-content/
+          server-dir: ./wp-content/
 
           # 🔒 estabilidad
           timeout: 60000
@@ -115,6 +115,7 @@ jobs:
             **/.git*
             **/.git*/**
             **/.github/**
+            **/node_modules/**
 
   operate:
     name: 6. Operate
