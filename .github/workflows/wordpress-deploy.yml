@@ -103,8 +103,8 @@ jobs:
           protocol: ftps
           port: 21
 
-          local-dir: ./wp-content/themes/bloom-space/
-          server-dir: ./SpaZaitSebastian/wp-content/themes/bloom-space/
+          local-dir: ./wp-content/themes/blossom-spa/
+          server-dir: ./SpaZaitSebastian/wp-content/themes/blossom-spa/
 
           timeout: 60000
           log-level: verbose
