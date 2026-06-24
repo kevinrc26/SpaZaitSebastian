@@ -104,8 +104,8 @@ jobs:
           port: 21
 
           # 🚀 CORRECCIÓN: Apunta a la raíz de contenido para actualizar Temas (bloom-space) y Plugins
-          local-dir: ./wp-content/
-          server-dir: ./wp-content/
+         local-dir: ./wp-content/themes/bloom-space/
+          server-dir: ./wp-content/themes/bloom-space/
 
           # 🔒 estabilidad
           timeout: 60000
