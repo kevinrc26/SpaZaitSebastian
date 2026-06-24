@@ -121,11 +121,15 @@ jobs:
     needs: deploy
 
     steps:
-      - name: Verificar disponibilidad y código HTTP
-        uses: sanyatuning/check-http-status-action@v1
-        with:
-          url: ${{ secrets.CPANEL_DOMAIN }}
-          status: 200
+      - name: Verificar código HTTP
+        run: |
+          STATUS=$(curl -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8" -L -o /dev/null -s -w "%{http_code}" ${{ secrets.CPANEL_DOMAIN }})
+          echo "HTTP Status obtenido: $STATUS"
+
+          if [ "$STATUS" -lt 200 ] || [ "$STATUS" -ge 400 ]; then
+            echo "Error: El sitio web devolvió un código de estado fallido ($STATUS)"
+            exit 1
+          fi
 
   monitor:
     name: 7. Monitor
@@ -135,7 +139,7 @@ jobs:
     steps:
       - name: Medir tiempo de respuesta
         run: |
-          curl -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" -L -o /dev/null -s -w "Tiempo de respuesta: %{time_total}s\n" ${{ secrets.CPANEL_DOMAIN }}
+          curl -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8" -L -o /dev/null -s -w "Tiempo de respuesta: %{time_total}s\n" ${{ secrets.CPANEL_DOMAIN }}
 
       - name: Verificar certificado SSL
         run: |
@@ -144,4 +148,3 @@ jobs:
       - name: Finalizar monitoreo
         run: |
           echo "Pipeline ejecutado correctamente"
-
