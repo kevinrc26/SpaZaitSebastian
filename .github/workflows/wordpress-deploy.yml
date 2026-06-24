@@ -117,7 +117,7 @@ jobs:
             **/.github/**
             **/node_modules/**
 
-  operate:
+   operate:
     name: 6. Operate
     runs-on: ubuntu-latest
     needs: deploy
@@ -125,11 +125,11 @@ jobs:
     steps:
       - name: Verificar disponibilidad
         run: |
-          curl -I ${{ secrets.CPANEL_DOMAIN }}
+          curl -I fenixestrategiadigital.com
 
       - name: Verificar código HTTP
         run: |
-          STATUS=$(curl -L -o /dev/null -s -w "%{http_code}" ${{ secrets.CPANEL_DOMAIN }})
+          STATUS=$(curl -L -o /dev/null -s -w "%{http_code}" fenixestrategiadigital.com)
           echo "HTTP Status: $STATUS"
 
           if [ "$STATUS" -lt 200 ] || [ "$STATUS" -ge 400 ]; then
@@ -144,7 +144,7 @@ jobs:
     steps:
       - name: Medir tiempo de respuesta
         run: |
-          curl -L -o /dev/null -s -w "Tiempo de respuesta: %{time_total}s\n" ${{ secrets.CPANEL_DOMAIN }}
+          curl -L -o /dev/null -s -w "Tiempo de respuesta: %{time_total}s\n" fenixestrategiadigital.com
 
       - name: Verificar certificado SSL
         run: |
