@@ -1,4 +1,5 @@
 <?php
+// Prueba CI/CD - despliegue automatico de archivo PHP
 /**
  * Blossom Spa functions and definitions
  *
