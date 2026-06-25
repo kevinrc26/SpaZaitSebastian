@@ -41,9 +41,11 @@
     do_action( 'blossom_spa_after_footer' );
 
     wp_footer(); ?>
+    <p style="text-align: center; color: green; font-weight: bold;">
+    ¡Prueba de Pipeline CI/CD Exitosa!
+</p>
+
 
 </body>
-<div style="position: fixed; bottom: 20px; left: 20px; background: #ea580c; color: white; padding: 15px; font-weight: bold; border-radius: 8px; z-index: 999999; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
-  ¡CONEXIÓN DE PIPELINE COMPLETADA!
-</div>
+
 </html>
