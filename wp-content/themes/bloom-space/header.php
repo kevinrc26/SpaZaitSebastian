@@ -32,9 +32,6 @@
 <?php
 
     wp_body_open();
-
-    // INYECCIÓN DIRECTA PARA PRUEBA VISUAL DE SOBRESCRITURA CI/CD
-    echo '<div style="background: #27ae60; color: white; text-align: center; padding: 25px; font-size: 24px; font-weight: bold; width: 100%; position: relative; z-index: 999999;">¡CI/CD DESPLEGADO POR SOBRESCRITURA EXITOSA!</div>';
     
     /**
      * Before Header
