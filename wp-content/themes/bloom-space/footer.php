@@ -19,7 +19,7 @@
     /**
      * Before footer
      * 
-     * @hooked blossom_spa_before_footer_start  - 10
+     * @hooked blossom_spa_instagram - 10
     */
     do_action( 'blossom_spa_before_footer_start' );
 
@@ -39,9 +39,6 @@
      * @hooked blossom_spa_page_end    - 20
     */
     do_action( 'blossom_spa_after_footer' );
-
-    // TEXTO DE PRUEBA INYECTADO MANUALMENTE FUERA DEL GANCHO DEL TEMA
-    echo '<p style="text-align: center; color: red; font-weight: bold; background: yellow; padding: 10px; margin: 0; z-index: 9999; position: relative;">¡PRUEBA CI/CD EXITOSA!</p>';
 
     wp_footer(); ?>
     
