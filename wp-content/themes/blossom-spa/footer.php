@@ -33,25 +33,23 @@
 
     wp_footer(); ?>
     
-    <!-- ============================================================ -->
-    <!-- FOOTER CON COLORES DEL SITIO - ZAIT SEBASTIÁN SPA            -->
-    <!-- ============================================================ -->
+
     
     <footer id="colophon" class="site-footer" role="contentinfo">
-        <div style="background: #f0f8ff; color: #2c3e50; padding: 50px 20px 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; border-top: 3px solid #3498db;">
+        <div style="background: #f0f8ff; color: #2c3e50; padding: 40px 20px 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; border-top: 3px solid #3498db;">
             
             <!-- Contenedor principal -->
-            <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 40px; margin-bottom: 30px;">
+            <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-bottom: 25px;">
                 
                 <!-- Columna 1: Información del Spa -->
                 <div>
-                    <h3 style="color: #2c3e50; font-size: 18px; margin-bottom: 15px; border-bottom: 2px solid #3498db; padding-bottom: 10px; display: inline-block;">
+                    <h3 style="color: #2c3e50; font-size: 17px; margin-bottom: 12px; border-bottom: 2px solid #3498db; padding-bottom: 8px; display: inline-block;">
                         🌿 Zait Sebastián Spa
                     </h3>
-                    <p style="color: #555; line-height: 1.8; font-size: 14px; margin: 8px 0;">
-                        Tratamientos diseñados para promover el bienestar, la relajación y el cuidado personal.
+                    <p style="color: #555; line-height: 1.8; font-size: 13px; margin: 6px 0;">
+                        Tratamientos para el bienestar, relajación y cuidado personal.
                     </p>
-                    <p style="color: #555; line-height: 1.8; font-size: 14px; margin: 8px 0;">
+                    <p style="color: #555; line-height: 1.8; font-size: 13px; margin: 6px 0;">
                         <span style="display: block;">📍 Ambato - Ecuador</span>
                         <span style="display: block;">📞 +593 0995665483</span>
                         <span style="display: block;">✉️ info@zaitsebastianspa.com</span>
@@ -60,18 +58,18 @@
                 
                 <!-- Columna 2: Horarios -->
                 <div>
-                    <h3 style="color: #2c3e50; font-size: 18px; margin-bottom: 15px; border-bottom: 2px solid #3498db; padding-bottom: 10px; display: inline-block;">
+                    <h3 style="color: #2c3e50; font-size: 17px; margin-bottom: 12px; border-bottom: 2px solid #3498db; padding-bottom: 8px; display: inline-block;">
                         🕐 Horarios
                     </h3>
-                    <p style="color: #555; line-height: 1.8; font-size: 14px; margin: 8px 0;">
+                    <p style="color: #555; line-height: 1.8; font-size: 13px; margin: 6px 0;">
                         <strong style="color: #2c3e50;">Lunes a Viernes</strong><br>
                         7:00 AM - 7:00 PM
                     </p>
-                    <p style="color: #555; line-height: 1.8; font-size: 14px; margin: 8px 0;">
+                    <p style="color: #555; line-height: 1.8; font-size: 13px; margin: 6px 0;">
                         <strong style="color: #2c3e50;">Sábado</strong><br>
                         8:00 AM - 5:00 PM
                     </p>
-                    <p style="color: #555; line-height: 1.8; font-size: 14px; margin: 8px 0;">
+                    <p style="color: #555; line-height: 1.8; font-size: 13px; margin: 6px 0;">
                         <strong style="color: #2c3e50;">Domingo</strong><br>
                         <span style="color: #999;">Cerrado</span>
                     </p>
@@ -79,81 +77,56 @@
                 
                 <!-- Columna 3: Enlaces rápidos -->
                 <div>
-                    <h3 style="color: #2c3e50; font-size: 18px; margin-bottom: 15px; border-bottom: 2px solid #3498db; padding-bottom: 10px; display: inline-block;">
+                    <h3 style="color: #2c3e50; font-size: 17px; margin-bottom: 12px; border-bottom: 2px solid #3498db; padding-bottom: 8px; display: inline-block;">
                         📋 Enlaces
                     </h3>
                     <ul style="list-style: none; padding: 0; margin: 0;">
-                        <li style="margin-bottom: 8px;">
-                            <a href="#" style="color: #555; text-decoration: none; font-size: 14px; transition: color 0.3s; display: inline-block;">🏠 Inicio</a>
+                        <li style="margin-bottom: 6px;">
+                            <a href="#" style="color: #555; text-decoration: none; font-size: 13px; transition: color 0.3s;">🏠 Inicio</a>
                         </li>
-                        <li style="margin-bottom: 8px;">
-                            <a href="#" style="color: #555; text-decoration: none; font-size: 14px; transition: color 0.3s; display: inline-block;">👤 Quiénes Somos</a>
+                        <li style="margin-bottom: 6px;">
+                            <a href="#" style="color: #555; text-decoration: none; font-size: 13px; transition: color 0.3s;">👤 Quiénes Somos</a>
                         </li>
-                        <li style="margin-bottom: 8px;">
-                            <a href="#" style="color: #555; text-decoration: none; font-size: 14px; transition: color 0.3s; display: inline-block;">💆 Servicios</a>
+                        <li style="margin-bottom: 6px;">
+                            <a href="#" style="color: #555; text-decoration: none; font-size: 13px; transition: color 0.3s;">💆 Servicios</a>
                         </li>
-                        <li style="margin-bottom: 8px;">
-                            <a href="#" style="color: #555; text-decoration: none; font-size: 14px; transition: color 0.3s; display: inline-block;">📞 Contacto</a>
+                        <li style="margin-bottom: 6px;">
+                            <a href="#" style="color: #555; text-decoration: none; font-size: 13px; transition: color 0.3s;">📞 Contacto</a>
                         </li>
-                        <li style="margin-bottom: 8px;">
-                            <a href="#" style="color: #555; text-decoration: none; font-size: 14px; transition: color 0.3s; display: inline-block;">📅 Reservar Cita</a>
+                        <li style="margin-bottom: 6px;">
+                            <a href="#" style="color: #555; text-decoration: none; font-size: 13px; transition: color 0.3s;">📅 Reservar Cita</a>
                         </li>
                     </ul>
                 </div>
                 
                 <!-- Columna 4: Redes Sociales -->
                 <div>
-                    <h3 style="color: #2c3e50; font-size: 18px; margin-bottom: 15px; border-bottom: 2px solid #3498db; padding-bottom: 10px; display: inline-block;">
+                    <h3 style="color: #2c3e50; font-size: 17px; margin-bottom: 12px; border-bottom: 2px solid #3498db; padding-bottom: 8px; display: inline-block;">
                         📱 Síguenos
                     </h3>
-                    <p style="color: #555; font-size: 14px; margin-bottom: 15px;">
-                        Conéctate con nosotros en redes sociales.
+                    <p style="color: #555; font-size: 13px; margin-bottom: 12px;">
+                        Conéctate con nosotros.
                     </p>
-                    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-                        <a href="#" style="background: #e8f4fd; color: #2c3e50; padding: 8px 15px; border-radius: 6px; text-decoration: none; font-size: 13px; transition: all 0.3s; border: 1px solid #d4e9f7;">📘 Facebook</a>
-                        <a href="#" style="background: #e8f4fd; color: #2c3e50; padding: 8px 15px; border-radius: 6px; text-decoration: none; font-size: 13px; transition: all 0.3s; border: 1px solid #d4e9f7;">📸 Instagram</a>
-                        <a href="#" style="background: #e8f4fd; color: #2c3e50; padding: 8px 15px; border-radius: 6px; text-decoration: none; font-size: 13px; transition: all 0.3s; border: 1px solid #d4e9f7;">🐦 Twitter</a>
+                    <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                        <a href="#" style="background: #e8f4fd; color: #2c3e50; padding: 6px 14px; border-radius: 6px; text-decoration: none; font-size: 12px; transition: all 0.3s; border: 1px solid #d4e9f7;">📘 Facebook</a>
+                        <a href="#" style="background: #e8f4fd; color: #2c3e50; padding: 6px 14px; border-radius: 6px; text-decoration: none; font-size: 12px; transition: all 0.3s; border: 1px solid #d4e9f7;">📸 Instagram</a>
+                        <a href="#" style="background: #e8f4fd; color: #2c3e50; padding: 6px 14px; border-radius: 6px; text-decoration: none; font-size: 12px; transition: all 0.3s; border: 1px solid #d4e9f7;">🐦 Twitter</a>
                     </div>
                 </div>
                 
             </div>
             
-            <!-- Línea divisoria -->
-            <div style="max-width: 1200px; margin: 0 auto; border-top: 1px solid #d4e9f7; padding-top: 20px;">
-                
-                <!-- Fila inferior: Copyright + CI/CD -->
-                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
-                    
-                    <!-- Copyright -->
-                    <div style="color: #888; font-size: 13px;">
-                        © Copyright <?php echo date('Y'); ?>. Todos los derechos reservados.
-                    </div>
-                    
-                    <!-- Badge CI/CD con hora de ECUADOR -->
-                    <div style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
-                        <span style="background: #3498db; color: #ffffff; padding: 4px 14px; border-radius: 20px; font-size: 11px; font-weight: bold;">
-                            🚀 CI/CD Activo
-                        </span>
-                        <span style="color: #888; font-size: 11px;">
-                            Último despliegue: 
-                            <?php 
-                                $timezone = new DateTimeZone('America/Guayaquil');
-                                $date = new DateTime('now', $timezone);
-                                echo $date->format('d/m/Y H:i'); 
-                            ?>
-                        </span>
-                    </div>
-                    
+            <!-- Línea divisoria y Copyright -->
+            <div style="max-width: 1200px; margin: 0 auto; border-top: 1px solid #d4e9f7; padding-top: 15px; text-align: center;">
+                <div style="color: #888; font-size: 12px;">
+                    © Copyright <?php echo date('Y'); ?>. Todos los derechos reservados.
                 </div>
-                
             </div>
             
         </div>
     </footer>
     
-    <!-- ============================================================ -->
-    <!-- FIN DEL FOOTER CON COLORES DEL SITIO                          -->
-    <!-- ============================================================ -->
+  
     
 </body>
 </html>
