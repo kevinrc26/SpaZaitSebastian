@@ -129,13 +129,18 @@
                         © Copyright <?php echo date('Y'); ?>. Todos los derechos reservados.
                     </div>
                     
-                    <!-- Badge CI/CD -->
+                    <!-- Badge CI/CD con hora de ECUADOR -->
                     <div style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
                         <span style="background: #3498db; color: #ffffff; padding: 4px 14px; border-radius: 20px; font-size: 11px; font-weight: bold;">
                             🚀 CI/CD Activo
                         </span>
                         <span style="color: #888; font-size: 11px;">
-                            Último despliegue: <?php echo date('d/m/Y H:i'); ?>
+                            Último despliegue: 
+                            <?php 
+                                $timezone = new DateTimeZone('America/Guayaquil');
+                                $date = new DateTime('now', $timezone);
+                                echo $date->format('d/m/Y H:i'); 
+                            ?>
                         </span>
                     </div>
                     
