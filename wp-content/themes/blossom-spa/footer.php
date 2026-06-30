@@ -33,8 +33,6 @@
 
     wp_footer(); ?>
     
-
-    
     <footer id="colophon" class="site-footer" role="contentinfo">
         <div style="background: #f0f8ff; color: #2c3e50; padding: 40px 20px 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; border-top: 3px solid #3498db;">
             
@@ -50,13 +48,12 @@
                         Tratamientos para el bienestar, relajación y cuidado personal.
                     </p>
                     <p style="color: #555; line-height: 1.8; font-size: 13px; margin: 6px 0;">
-                        <span style="display: block;">📍 Ambato - Ecuador</span>
+                        <span style="display: block;">📍 Loja - Ecuador</span>
                         <span style="display: block;">📞 +593 0995665483</span>
                         <span style="display: block;">✉️ info@zaitsebastianspa.com</span>
                     </p>
                 </div>
                 
-                <!-- Columna 2: Horarios -->
                 <div>
                     <h3 style="color: #2c3e50; font-size: 17px; margin-bottom: 12px; border-bottom: 2px solid #3498db; padding-bottom: 8px; display: inline-block;">
                         🕐 Horarios
@@ -67,7 +64,7 @@
                     </p>
                     <p style="color: #555; line-height: 1.8; font-size: 13px; margin: 6px 0;">
                         <strong style="color: #2c3e50;">Sábado</strong><br>
-                        8:00 AM - 5:00 PM
+                        8:00 AM - :00 PM
                     </p>
                     <p style="color: #555; line-height: 1.8; font-size: 13px; margin: 6px 0;">
                         <strong style="color: #2c3e50;">Domingo</strong><br>
@@ -75,7 +72,6 @@
                     </p>
                 </div>
                 
-                <!-- Columna 3: Enlaces rápidos -->
                 <div>
                     <h3 style="color: #2c3e50; font-size: 17px; margin-bottom: 12px; border-bottom: 2px solid #3498db; padding-bottom: 8px; display: inline-block;">
                         📋 Enlaces
@@ -99,7 +95,6 @@
                     </ul>
                 </div>
                 
-                <!-- Columna 4: Redes Sociales -->
                 <div>
                     <h3 style="color: #2c3e50; font-size: 17px; margin-bottom: 12px; border-bottom: 2px solid #3498db; padding-bottom: 8px; display: inline-block;">
                         📱 Síguenos
@@ -116,7 +111,6 @@
                 
             </div>
             
-            <!-- Línea divisoria y Copyright -->
             <div style="max-width: 1200px; margin: 0 auto; border-top: 1px solid #d4e9f7; padding-top: 15px; text-align: center;">
                 <div style="color: #888; font-size: 12px;">
                     © Copyright <?php echo date('Y'); ?>. Todos los derechos reservados.
