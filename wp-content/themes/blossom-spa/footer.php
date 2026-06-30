@@ -33,11 +33,17 @@
 
     wp_footer(); ?>
     
+    <!-- ============================================================ -->
+    <!-- FOOTER NORMAL - ZAIT SEBASTIÁN SPA                           -->
+    <!-- ============================================================ -->
+    
     <footer id="colophon" class="site-footer" role="contentinfo">
         <div style="background: #f0f8ff; color: #2c3e50; padding: 40px 20px 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; border-top: 3px solid #3498db;">
             
+            <!-- Contenedor principal -->
             <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-bottom: 25px;">
                 
+                <!-- Columna 1: Información del Spa -->
                 <div>
                     <h3 style="color: #2c3e50; font-size: 17px; margin-bottom: 12px; border-bottom: 2px solid #3498db; padding-bottom: 8px; display: inline-block;">
                         🌿 Zait Sebastián Spa
@@ -46,12 +52,13 @@
                         Tratamientos para el bienestar, relajación y cuidado personal.
                     </p>
                     <p style="color: #555; line-height: 1.8; font-size: 13px; margin: 6px 0;">
-                        <span style="display: block;">📍 Loja - Ecuador</span>
+                        <span style="display: block;">📍 Ambato - Ecuador</span>
                         <span style="display: block;">📞 +593 0995665483</span>
                         <span style="display: block;">✉️ info@zaitsebastianspa.com</span>
                     </p>
                 </div>
                 
+                <!-- Columna 2: Horarios -->
                 <div>
                     <h3 style="color: #2c3e50; font-size: 17px; margin-bottom: 12px; border-bottom: 2px solid #3498db; padding-bottom: 8px; display: inline-block;">
                         🕐 Horarios
@@ -70,29 +77,31 @@
                     </p>
                 </div>
                 
+                <!-- Columna 3: Enlaces rápidos -->
                 <div>
                     <h3 style="color: #2c3e50; font-size: 17px; margin-bottom: 12px; border-bottom: 2px solid #3498db; padding-bottom: 8px; display: inline-block;">
                         📋 Enlaces
                     </h3>
                     <ul style="list-style: none; padding: 0; margin: 0;">
                         <li style="margin-bottom: 6px;">
-                            <a href="https://fenixestrategiadigital.com/SpaZaitSebastian/" style="color: #555; text-decoration: none; font-size: 13px; transition: color 0.3s;">🏠 Inicio</a>
+                            <a href="#" style="color: #555; text-decoration: none; font-size: 13px; transition: color 0.3s;">🏠 Inicio</a>
                         </li>
                         <li style="margin-bottom: 6px;">
-                            <a href="https://fenixestrategiadigital.com/SpaZaitSebastian/quienes-somos/" style="color: #555; text-decoration: none; font-size: 13px; transition: color 0.3s;">👤 Quiénes Somos</a>
+                            <a href="#" style="color: #555; text-decoration: none; font-size: 13px; transition: color 0.3s;">👤 Quiénes Somos</a>
                         </li>
                         <li style="margin-bottom: 6px;">
-                            <a href="https://fenixestrategiadigital.com/SpaZaitSebastian/servicios/" style="color: #555; text-decoration: none; font-size: 13px; transition: color 0.3s;">💆 Servicios</a>
+                            <a href="#" style="color: #555; text-decoration: none; font-size: 13px; transition: color 0.3s;">💆 Servicios</a>
                         </li>
                         <li style="margin-bottom: 6px;">
-                            <a href="https://fenixestrategiadigital.com/SpaZaitSebastian/contactenos/" style="color: #555; text-decoration: none; font-size: 13px; transition: color 0.3s;">📞 Contacto</a>
+                            <a href="#" style="color: #555; text-decoration: none; font-size: 13px; transition: color 0.3s;">📞 Contacto</a>
                         </li>
                         <li style="margin-bottom: 6px;">
-                            <a href="https://fenixestrategiadigital.com/SpaZaitSebastian/reservar-cita/" style="color: #555; text-decoration: none; font-size: 13px; transition: color 0.3s;">📅 Reservar Cita</a>
+                            <a href="#" style="color: #555; text-decoration: none; font-size: 13px; transition: color 0.3s;">📅 Reservar Cita</a>
                         </li>
                     </ul>
                 </div>
                 
+                <!-- Columna 4: Redes Sociales -->
                 <div>
                     <h3 style="color: #2c3e50; font-size: 17px; margin-bottom: 12px; border-bottom: 2px solid #3498db; padding-bottom: 8px; display: inline-block;">
                         📱 Síguenos
@@ -109,6 +118,7 @@
                 
             </div>
             
+            <!-- Línea divisoria y Copyright -->
             <div style="max-width: 1200px; margin: 0 auto; border-top: 1px solid #d4e9f7; padding-top: 15px; text-align: center;">
                 <div style="color: #888; font-size: 12px;">
                     © Copyright <?php echo date('Y'); ?>. Todos los derechos reservados.
@@ -118,7 +128,9 @@
         </div>
     </footer>
     
-  
+    <!-- ============================================================ -->
+    <!-- FIN DEL FOOTER NORMAL                                         -->
+    <!-- ============================================================ -->
     
 </body>
 </html>
