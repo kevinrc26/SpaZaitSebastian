@@ -7995,18 +7995,3 @@ RESPONSIVE STYLESHEET
 .site-main article .content-wrap .entry-content+.entry-footer {
 	margin-top: 10px;
 }
-
-/* PRUEBA EN VIVO DEL PIPELINE */
-body::after {
-	content: "¡Pipeline CI/CD Activo!";
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	background: #22c55e;
-	color: white;
-	padding: 10px 15px;
-	font-family: sans-serif;
-	font-weight: bold;
-	border-radius: 5px;
-	z-index: 99999;
-}
