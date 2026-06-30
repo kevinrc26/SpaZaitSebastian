@@ -42,5 +42,10 @@
 
     wp_footer(); ?>
     
+    <!-- CAMBIO EN EL FOOTER CON FECHA Y HORA -->
+    <div style="background: #e74c3c; color: white; padding: 15px; text-align: center; font-size: 18px; font-weight: bold; border-top: 5px solid #f1c40f; margin-top: 20px;">
+        🔥 CAMBIO EN EL FOOTER - <?php echo date('Y-m-d H:i:s'); ?>
+    </div>
+    
 </body>
 </html>
