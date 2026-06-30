@@ -25,12 +25,7 @@
 
     /**
      * Footer ORIGINAL COMENTADO para reemplazarlo
-     * 
-     * @hooked blossom_spa_footer_start  - 20
-     * @hooked blossom_spa_footer_top    - 30
-     * @hooked blossom_spa_footer_bottom - 40
-     * @hooked blossom_spa_footer_end    - 50
-    */
+     */
     // do_action( 'blossom_spa_footer' ); // ❌ COMENTADO para ocultar el footer original
     
     /**
@@ -47,7 +42,7 @@
     <!-- ========================================================= -->
     
     <footer id="colophon" class="site-footer" role="contentinfo">
-        <div style="background: #1a1a2e; color: #f1c40f; padding: 30px 20px; text-align: center; border-top: 4px solid #e74c3c;">
+        <div style="background: #1a1a2e; color: #f1c40f; padding: 30px 20px; text-align: center;">
             
             <div style="font-size: 22px; font-weight: bold; margin-bottom: 10px; color: #ffffff;">
                 🔥 ZAIT SEBASTIÁN SPA - MODIFICADO CON CI/CD
