@@ -97,3 +97,12 @@ require get_template_directory() . '/inc/dashboard/dashboard.php';
  * Implement Local Font Method functions.
  */
 require get_template_directory() . '/inc/class-webfont-loader.php';
+
+/**
+ * Prueba CI/CD
+ */
+add_action('wp_footer', function () {
+    echo '<div style="background:#0a7cff;color:#fff;padding:12px;text-align:center;font-weight:bold;z-index:99999;">
+    Sitio actualizado mediante GitHub Actions CI/CD
+    </div>';
+});
