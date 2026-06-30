@@ -94,7 +94,7 @@ jobs:
       - name: Clonar repositorio
         uses: actions/checkout@v4
 
-      # 📁 PASO 1: Desplegar TEMA blossom-spa
+      
       - name: Desplegar tema blossom-spa
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -112,7 +112,6 @@ jobs:
             **/.git*/**
             **/.github/
 
-      # 📁 PASO 2: Desplegar uploads (como antes)
       - name: Desplegar documentos por FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
