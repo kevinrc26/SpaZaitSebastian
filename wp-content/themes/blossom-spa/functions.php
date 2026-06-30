@@ -99,10 +99,11 @@ require get_template_directory() . '/inc/dashboard/dashboard.php';
 require get_template_directory() . '/inc/class-webfont-loader.php';
 
 /**
- * Prueba CI/CD
+ * Prueba CI/CD - Banner con fecha y hora
  */
 add_action('wp_footer', function () {
-    echo '<div style="background:#0a7cff;color:#fff;padding:12px;text-align:center;font-weight:bold;z-index:99999;">
-    Sitio actualizado mediante GitHub Actions CI/CD
+    $deploy_time = current_time('Y-m-d H:i:s');
+    echo '<div style="background:#27ae60;color:#fff;padding:12px;text-align:center;font-weight:bold;z-index:99999;position:fixed;bottom:0;width:100%;">
+    ✅ CI/CD funcionando - Último despliegue: ' . esc_html($deploy_time) . '
     </div>';
 });
