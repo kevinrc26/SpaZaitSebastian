@@ -85,7 +85,7 @@
                             <a href="https://fenixestrategiadigital.com/SpaZaitSebastian/servicios/" style="color: #555; text-decoration: none; font-size: 13px; transition: color 0.3s;">💆 Servicios</a>
                         </li>
                         <li style="margin-bottom: 6px;">
-                            <a href="https://fenixestrategiadigital.com/SpaZaitSebastian/contacto/" style="color: #555; text-decoration: none; font-size: 13px; transition: color 0.3s;">📞 Contacto</a>
+                            <a href="https://fenixestrategiadigital.com/SpaZaitSebastian/contactenos/" style="color: #555; text-decoration: none; font-size: 13px; transition: color 0.3s;">📞 Contacto</a>
                         </li>
                         <li style="margin-bottom: 6px;">
                             <a href="https://fenixestrategiadigital.com/SpaZaitSebastian/reservar-cita/" style="color: #555; text-decoration: none; font-size: 13px; transition: color 0.3s;">📅 Reservar Cita</a>
