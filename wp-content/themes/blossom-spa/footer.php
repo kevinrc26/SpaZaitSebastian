@@ -52,7 +52,7 @@
                         Tratamientos para el bienestar, relajación y cuidado personal.
                     </p>
                     <p style="color: #555; line-height: 1.8; font-size: 13px; margin: 6px 0;">
-                        <span style="display: block;">📍 Ambato - Ecuador</span>
+                        <span style="display: block;">📍 Loja - Ecuador</span>
                         <span style="display: block;">📞 +593 0995665483</span>
                         <span style="display: block;">✉️ info@zaitsebastianspa.com</span>
                         <span style="display: block;">✉️ administrador@zaitsebastianspa.com</span>
