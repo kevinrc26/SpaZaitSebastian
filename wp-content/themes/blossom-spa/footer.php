@@ -57,6 +57,8 @@
                         <span style="display: block;">✉️ info@zaitsebastianspa.com</span>
                         <span style="display: block;">✉️ administrador@zaitsebastianspa.com</span>
                         <span style="display: block;">✉️ fisio@zaitsebastianspa.com</span>
+                        <span style="display: block;">✉️recepcionista@zaitsebastianspa.com</span>
+
 
                     </p>
                 </div>
